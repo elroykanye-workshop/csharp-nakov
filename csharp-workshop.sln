@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chapter02", "chapter02\chapter02.csproj", "{6039ABB0-CECB-413C-889F-1C5477DAB7C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{2ADF26DB-2B47-459B-B43A-9B64F8AEFEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ADF26DB-2B47-459B-B43A-9B64F8AEFEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ADF26DB-2B47-459B-B43A-9B64F8AEFEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6039ABB0-CECB-413C-889F-1C5477DAB7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6039ABB0-CECB-413C-889F-1C5477DAB7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6039ABB0-CECB-413C-889F-1C5477DAB7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6039ABB0-CECB-413C-889F-1C5477DAB7C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
