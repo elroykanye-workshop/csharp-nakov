@@ -18,6 +18,3 @@ bool isEx4Valid = (num1 & 8) == 0;
 float a = 2.4F, b = 4, h = 5.4F;
 double S = (a + b) * h / 2;
 
-/*
-
-*/

@@ -119,5 +119,32 @@ namespace chapter03
             Console.WriteLine(isEx12Valid);
         }
 
+        /*
+         * 13. We are given the number n, the value v (v = 0 or 1) and the position p.
+         * write a sequence of operations that changes the value of n, so the bit on
+         * the position p has the value of v. Example: n=35, p=5, v=0 -> n=3.
+         * Another example: n=35, p=2, v=1 -> n=39.
+         */
+        public static void Exercise12(int n, int p, int v)
+        {
+
+        }
+
+        /*
+         * 14. Write a program that checks if a given number n (1 < n < 100) is a
+         * prime number (i.e. it is divisible without remainder only to itself and 1)
+         */
+        public static void Exercise13(int num)
+        {
+            bool isPrime = true;
+            for(int i = 2; i < num; i++)
+            {
+                if (num % i == 0) isPrime = false;
+                break;
+            }
+            Console.WriteLine(num + "is " + (isPrime ? "" : "not") + " a prime number");
+        }
+
+
     }
 }
