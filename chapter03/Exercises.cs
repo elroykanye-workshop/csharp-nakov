@@ -72,27 +72,51 @@ namespace chapter03
         {
             var sumDigits = 0;
             var reverseDigits = "";
-            foreach(char digit in num.ToCharArray())
+            foreach(char digit in num.ToString())
             {
-                sumDigits += int.Parse(digit.ToString());
-                reverseDigits = digit.ToString() + reverseDigits;
+                sumDigits += int.Parse(digit.ToString()); // step 1
+                reverseDigits = digit.ToString() + reverseDigits; // step 2
             }
 
             char[] swapFirstLast, swapSecThird;
             {
+                // step 3
                 swapFirstLast = num.ToCharArray();
                 var tmp = swapFirstLast[0];
                 swapFirstLast[0] = swapFirstLast[3];
                 swapFirstLast[3] = tmp;
             }
             {
+                // step 4
                 swapSecThird = num.ToCharArray();
                 var tmp = swapSecThird[1];
                 swapSecThird[1] = swapSecThird[2];
                 swapSecThird[2] = tmp;
             }
+        }
 
+        /*
+         * 11. We are given a number n and a position p. Write a sequence of 
+         * operations that prints the value of the bit on the position p in the
+         * number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35,
+         * p=6 -> 0.
+         */
+        public static void Exercise11(int n, int p)
+        {
+            int i = 1;
+            int mask = i << p;
+            Console.WriteLine((n & mask) != 0 ? 1 : 0);
+        }
 
+        /*
+         * 12. Write a Boolean expression that checks if the bit on position p in the
+         * integer v has the value 1. Example v=5, p=1 -> false.
+         */
+        public static void Exercise12(int v, int p)
+        {
+            int mask = 1 << p;
+            bool isEx12Valid = mask == 0;
+            Console.WriteLine(isEx12Valid);
         }
 
     }
